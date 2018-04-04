@@ -19,13 +19,12 @@ export default class ClickTracker extends React.Component{
     render(){
         // Object Destructuring
         const { buttonText } = this.props
-
+        const fullText = `${buttonText} ${this.state.clickCounter}`
         return (
             <button
                 onClick={this.handleClick.bind(this)}
                 >
-                {buttonText}
-                {this.state.clickCounter}
+                {fullText}
             </button>
         )
     }

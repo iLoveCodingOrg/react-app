@@ -10,9 +10,6 @@ function App (){
     return (
         <div className="bordered">
             <ClickTracker buttonText="Click it" /> 
-            <Header />
-            <Content2 />
-            <Content3 />
         </div>
     )
 }
