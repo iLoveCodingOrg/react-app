@@ -10,7 +10,7 @@ export default class ClickTracker extends React.Component{
     }
 
     handleClick(){
-        var count =  this.state.clickCounter + 1;
+        const count =  this.state.clickCounter + 1;
         this.setState({
             clickCounter: count
         })
@@ -18,11 +18,8 @@ export default class ClickTracker extends React.Component{
 
     render(){
         // Object Destructuring
-        var {buttonText, buttonColor, buttonBorder} = this.props
+        const { buttonText } = this.props
 
-        // var buttonText = this.props.buttonText
-        // var buttonColor = this.props.buttonColor
-        // var buttonBorder = this.props.buttonBorder
         return (
             <button
                 onClick={this.handleClick.bind(this)}
