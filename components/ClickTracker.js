@@ -10,7 +10,7 @@ export default class ClickTracker extends React.Component{
     }
 
     handleClick(){
-        const count =  this.state.clickCounter + 1;
+        const count = this.state.clickCounter + 1;
         this.setState({
             clickCounter: count
         })

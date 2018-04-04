@@ -9,3 +9,23 @@ export default function Content (){
         </div>
     )
 }
+
+export function Content2 (){
+    return (
+        <div className="bordered">
+            <p>
+                Content 2
+            </p>
+        </div>
+    )
+}
+export function Content3 (){
+    return (
+        <div className="bordered">
+            <p>
+                Content 3
+            </p>
+        </div>
+    )
+}
+
