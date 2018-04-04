@@ -17,17 +17,11 @@ export default class ClickTracker extends React.Component{
     }
 
     render(){
-        // Object Destructuring
-        var {buttonText, buttonColor, buttonBorder} = this.props
-
-        // var buttonText = this.props.buttonText
-        // var buttonColor = this.props.buttonColor
-        // var buttonBorder = this.props.buttonBorder
         return (
             <button
                 onClick={this.handleClick.bind(this)}
                 >
-                {buttonText}
+                {this.props.buttonText}
                 {this.state.clickCounter}
             </button>
         )
